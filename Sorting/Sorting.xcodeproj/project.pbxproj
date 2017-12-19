@@ -61,10 +61,18 @@
 			isa = PBXGroup;
 			children = (
 				002EB8131FE973500018CA80 /* main.cpp */,
+				002EB81D1FE98A9A0018CA80 /* InsertionSort */,
+			);
+			path = Sorting;
+			sourceTree = "<group>";
+		};
+		002EB81D1FE98A9A0018CA80 /* InsertionSort */ = {
+			isa = PBXGroup;
+			children = (
 				002EB81A1FE973910018CA80 /* InsertionSort.cpp */,
 				002EB81B1FE973910018CA80 /* InsertionSort.hpp */,
 			);
-			path = Sorting;
+			path = InsertionSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
