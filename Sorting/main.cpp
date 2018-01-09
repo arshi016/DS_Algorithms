@@ -7,26 +7,32 @@
 //
 
 #include "InsertionSort.hpp"
+#include "SelectionSort.hpp"
+#include "Merge.hpp"
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
 void display (vector <int> array) {
-    vector <int> :: iterator i;
-    for (i = array.begin(); i != array.end(); ++i)
-        cout << *i << '\t';
+    cout << endl << "RESULT::: ";
+    vector <int> :: iterator it;
+    for (it = array.begin(); it != array.end(); ++it)
+        cout << *it << "   ";
 }
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     vector <int> array;
-    array.push_back(5);
-    array.push_back(2);
-    array.push_back(4);
-    array.push_back(6);
     array.push_back(1);
-    array.push_back(3);
+    array.push_back(12);
+    array.push_back(12);
+    array.push_back(15);
+    array.push_back(04);
+    array.push_back(18);
+    array.push_back(18);
+    array.push_back(13);
+    
     
     InsertionSort obj;
     vector<int> sortedArray = obj.sort(array);

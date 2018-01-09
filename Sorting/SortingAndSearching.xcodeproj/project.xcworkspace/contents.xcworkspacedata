@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Sorting.xcodeproj">
+      location = "self:/Users/a/github/myrepo/DS_Algorithms/Sorting/SortingAndSearching.xcodeproj">
    </FileRef>
 </Workspace>

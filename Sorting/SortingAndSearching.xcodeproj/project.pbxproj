@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		002EB8141FE973500018CA80 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 002EB8131FE973500018CA80 /* main.cpp */; };
 		002EB81C1FE973910018CA80 /* InsertionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 002EB81A1FE973910018CA80 /* InsertionSort.cpp */; };
+		002EB8371FE9A1820018CA80 /* SelectionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 002EB8351FE9A1820018CA80 /* SelectionSort.cpp */; };
+		00B8AF9F1FFA6735002E837C /* Merge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B8AF9D1FFA6735002E837C /* Merge.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		002EB8101FE973500018CA80 /* Sorting */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sorting; sourceTree = BUILT_PRODUCTS_DIR; };
+		002EB8101FE973500018CA80 /* SortingAndSearching */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SortingAndSearching; sourceTree = BUILT_PRODUCTS_DIR; };
 		002EB8131FE973500018CA80 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		002EB81A1FE973910018CA80 /* InsertionSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InsertionSort.cpp; sourceTree = "<group>"; };
 		002EB81B1FE973910018CA80 /* InsertionSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InsertionSort.hpp; sourceTree = "<group>"; };
+		002EB8351FE9A1820018CA80 /* SelectionSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SelectionSort.cpp; sourceTree = "<group>"; };
+		002EB8361FE9A1820018CA80 /* SelectionSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SelectionSort.hpp; sourceTree = "<group>"; };
+		00B8AF9D1FFA6735002E837C /* Merge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Merge.cpp; sourceTree = "<group>"; };
+		00B8AF9E1FFA6735002E837C /* Merge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Merge.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,8 @@
 		002EB8071FE973500018CA80 = {
 			isa = PBXGroup;
 			children = (
+				002EB8131FE973500018CA80 /* main.cpp */,
+				00E18E5A1FFCD12F009C5FEB /* Searching */,
 				002EB8121FE973500018CA80 /* Sorting */,
 				002EB8111FE973500018CA80 /* Products */,
 			);
@@ -52,7 +60,7 @@
 		002EB8111FE973500018CA80 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				002EB8101FE973500018CA80 /* Sorting */,
+				002EB8101FE973500018CA80 /* SortingAndSearching */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,9 +68,9 @@
 		002EB8121FE973500018CA80 /* Sorting */ = {
 			isa = PBXGroup;
 			children = (
-				002EB8131FE973500018CA80 /* main.cpp */,
-				002EB81E1FE98B520018CA80 /* New Group */,
 				002EB81D1FE98A9A0018CA80 /* InsertionSort */,
+				00B8AF9C1FFA6711002E837C /* MergeSort */,
+				002EB81E1FE98B520018CA80 /* SelectionSort */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";
@@ -76,19 +84,37 @@
 			path = InsertionSort;
 			sourceTree = "<group>";
 		};
-		002EB81E1FE98B520018CA80 /* New Group */ = {
+		002EB81E1FE98B520018CA80 /* SelectionSort */ = {
+			isa = PBXGroup;
+			children = (
+				002EB8351FE9A1820018CA80 /* SelectionSort.cpp */,
+				002EB8361FE9A1820018CA80 /* SelectionSort.hpp */,
+			);
+			path = SelectionSort;
+			sourceTree = "<group>";
+		};
+		00B8AF9C1FFA6711002E837C /* MergeSort */ = {
+			isa = PBXGroup;
+			children = (
+				00B8AF9D1FFA6735002E837C /* Merge.cpp */,
+				00B8AF9E1FFA6735002E837C /* Merge.hpp */,
+			);
+			path = MergeSort;
+			sourceTree = "<group>";
+		};
+		00E18E5A1FFCD12F009C5FEB /* Searching */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group";
+			path = Searching;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		002EB80F1FE973500018CA80 /* Sorting */ = {
+		002EB80F1FE973500018CA80 /* SortingAndSearching */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 002EB8171FE973500018CA80 /* Build configuration list for PBXNativeTarget "Sorting" */;
+			buildConfigurationList = 002EB8171FE973500018CA80 /* Build configuration list for PBXNativeTarget "SortingAndSearching" */;
 			buildPhases = (
 				002EB80C1FE973500018CA80 /* Sources */,
 				002EB80D1FE973500018CA80 /* Frameworks */,
@@ -98,9 +124,9 @@
 			);
 			dependencies = (
 			);
-			name = Sorting;
+			name = SortingAndSearching;
 			productName = Sorting;
-			productReference = 002EB8101FE973500018CA80 /* Sorting */;
+			productReference = 002EB8101FE973500018CA80 /* SortingAndSearching */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -118,7 +144,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 002EB80B1FE973500018CA80 /* Build configuration list for PBXProject "Sorting" */;
+			buildConfigurationList = 002EB80B1FE973500018CA80 /* Build configuration list for PBXProject "SortingAndSearching" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				002EB80F1FE973500018CA80 /* Sorting */,
+				002EB80F1FE973500018CA80 /* SortingAndSearching */,
 			);
 		};
 /* End PBXProject section */
@@ -140,7 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002EB8371FE9A1820018CA80 /* SelectionSort.cpp in Sources */,
 				002EB8141FE973500018CA80 /* main.cpp in Sources */,
+				00B8AF9F1FFA6735002E837C /* Merge.cpp in Sources */,
 				002EB81C1FE973910018CA80 /* InsertionSort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +298,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		002EB80B1FE973500018CA80 /* Build configuration list for PBXProject "Sorting" */ = {
+		002EB80B1FE973500018CA80 /* Build configuration list for PBXProject "SortingAndSearching" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				002EB8151FE973500018CA80 /* Debug */,
@@ -279,7 +307,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		002EB8171FE973500018CA80 /* Build configuration list for PBXNativeTarget "Sorting" */ = {
+		002EB8171FE973500018CA80 /* Build configuration list for PBXNativeTarget "SortingAndSearching" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				002EB8181FE973500018CA80 /* Debug */,

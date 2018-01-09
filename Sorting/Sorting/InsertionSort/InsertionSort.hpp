@@ -17,6 +17,7 @@ using namespace std;
 class InsertionSort {
 public:
     vector<int> sort(vector <int>);
+    vector<int> sort_recursive(vector <int>);
 };
 
 #endif /* InsertionSort_hpp */
